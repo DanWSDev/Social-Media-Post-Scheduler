@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EduTech Solutions - Social Media Post Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="client.js" defer></script>
+</head>
+<body>
+    <form id="grid" onsubmit="PostData(event)">
+        <h1>Social Media Post Scheduler</h1>
+        <div class="social-container">
+            <div>
+                <input type="checkbox" name="platform" class="social" value="Facebook" id="Facebook">
+                <label for="Facebook">Facebook</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="platform" class="social" value="Twitter" id="Twitter">
+                <label for="Twitter">Twitter</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="platform" class="social" value="YouTube" id="YouTube">
+                <label for="YouTube">YouTube</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="platform" class="social" value="Instagram" id="Instagram">
+                <label for="Instagram">Instagram</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="platform" class="social" value="LinkedIn" id="LinkedIn">
+                <label for="LinkedIn">LinkedIn</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="platform" class="social" value="Pinterest" id="Pinterest">
+                <label for="Pinterest">Pinterest</label>
+            </div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="schedule" onclick="DateandTime()">
+            <label for="schedule">Schedule</label>
+        </div>
+
+        <div id="date" style="display:none">
+            <label for="date">Choose Date:</label><br>
+            <input type="date" id="date" name="date"><br><br>
+        </div>
+
+        <div id="time" style="display:none">
+            <label for="time">Choose Time:</label><br>
+            <input type="time" id="time" name="time"><br><br>
+        </div>
+
+        <div class="file-upload">
+            <label for="media" class="file-label">Choose Image</label>
+            <input type="file" accept="image/*" id="media" name="media">
+            <button type="button" id="remove" onclick="RemoveFile()">Remove File</button>    
+        </div>
+
+        <div>
+            <input type="text" id="text" name="text" placeholder="Text Goes Here">
+        </div>
+
+        <div id="submit">
+            <button type="submit" id="post">POST</button>
+        </div>
+
+        <select size="5" id="list" style="display:none">
+        </select>
+    </form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+html, body {
+    background-color: #1944a9;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center; /* Center align all text */
+}
+
+#grid {
+    display: grid;
+    justify-content: center;
+    text-align: center; /* Align text center for all elements within #grid */
+}
+.social-container{
+    display: none;
+}
+/* Post button styles */
+#post {
+    border: none;
+    padding: 1em 2em;
+    border-radius: 2em;
+    margin: 2em 1em;
+    background-color: #1A1A1A;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#post:hover {
+    background-color: orange;
+    color: #1A1A1A;
+}
+
+/* Text input styles */
+#text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    margin: 2em 1em;
+    border-radius: 2em;
+    border: none;
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center; /* Center align text */
+}
+
+/* Remove button styles */
+#remove {
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 2em;
+    background-color: #1A1A1A;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#remove:hover {
+    background-color: orange;
+    color: #1A1A1A;
+}
+
+
+
+
+
+
+
+

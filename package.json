@@ -1,0 +1,23 @@
+{
+  "name": "social-media-post-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cron": "^3.1.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "instagram-private-api": "^1.46.1",
+    "instagram-web-api": "^2.2.2",
+    "multer": "^1.4.5-lts.1",
+    "request-promise": "^4.2.6",
+    "twitter-api-v2": "^1.17.1"
+  }
+}
